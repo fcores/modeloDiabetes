@@ -1,0 +1,139 @@
+DataSet 1: diabetes_012_health_indicators_BRFSS2015.csv
+Modelo 1: 
+
+Caracteristicas:
+    Diabetes_012: Variable objetivo original (no se utiliza como entrada después de crear la columna Diabetes_Binary).
+    
+        Valores: 0, 1, 2 (0 = No diabetes, 1 o 2 = Diabetes)
+    
+    HighBP (Presión arterial alta): Indicador binario.
+    
+        Valores: 0, 1
+    
+    HighChol (Colesterol alto): Indicador binario.
+    
+        Valores: 0, 1
+    
+    CholCheck (Chequeo de colesterol): Indicador binario.
+    
+        Valores: 0, 1
+    
+    BMI (Índice de masa corporal): Valor continuo.
+    
+        Rango: 12 a 98
+    
+    Smoker (Fumador): Indicador binario.
+    
+        Valores: 0, 1
+    
+    Stroke (Accidente cerebrovascular): Indicador binario.
+    
+        Valores: 0, 1
+    
+    HeartDiseaseorAttack (Enfermedad cardíaca o ataque): Indicador binario.
+    
+        Valores: 0, 1
+    
+    PhysActivity (Actividad física): Indicador binario.
+    
+        Valores: 0, 1
+    
+    Fruits (Consumo de frutas): Indicador binario.
+    
+        Valores: 0, 1
+    
+    Veggies (Consumo de verduras): Indicador binario.
+    
+        Valores: 0, 1
+    
+    HvyAlcoholConsump (Consumo elevado de alcohol): Indicador binario.
+    
+        Valores: 0, 1
+    
+    AnyHealthcare (Acceso a algún tipo de cuidado de la salud): Indicador binario.
+    
+        Valores: 0, 1
+    
+    NoDocbcCost (No fue al médico por costo): Indicador binario.
+    
+        Valores: 0, 1
+    
+    GenHlth (Salud general): Calificación de salud en una escala ordinal.
+    
+        Valores: 1 a 5
+    
+    MentHlth (Salud mental): Número de días con mala salud mental.
+    
+        Rango: 0 a 30
+    
+    PhysHlth (Salud física): Número de días con mala salud física.
+    
+        Rango: 0 a 30
+    
+    DiffWalk (Dificultad para caminar): Indicador binario.
+    
+        Valores: 0, 1
+    
+    Sex (Sexo): Indicador binario.
+    
+        Valores: 0 (femenino), 1 (masculino)
+    
+    Age (Edad en grupos): Grupos de edad (ordinal).
+    
+        Valores: 1 a 13 (representando rangos de edad específicos)
+    
+    Education (Nivel educativo): Nivel educativo en una escala ordinal.
+    
+        Valores: 1 a 6
+    
+    Income (Nivel de ingresos): Nivel de ingresos en una escala ordinal.
+    
+        Valores: 1 a 8
+    Para el modelo se utilizaron las siguientes caracteristicas
+    Diabetes_012 (variable original de diabetes)
+    GenHlth (Salud general)
+    HighBP (Presión arterial alta)
+    BMI (Índice de masa corporal)
+    DiffWalk (Dificultad para caminar)
+    HighChol (Colesterol alto)
+    Age (Edad)
+    HeartDiseaseorAttack (Enfermedad cardíaca o ataque)
+    PhysHlth (Días con mala salud física)
+    Income (Nivel de ingresos)
+
+DataSet 2: diabetes_prediction_dataset.csv
+Caracteristicas: 
+    Las características y sus posibles valores en el nuevo dataset son las siguientes:
+    
+        gender: Género de la persona (tipo de dato: object).
+            Valores: 'Male', 'Female', 'Other'
+    
+        age: Edad en años (tipo de dato: float64).
+            Rango: 0.08 a 80
+    
+        hypertension: Indicador de hipertensión (tipo de dato: int64).
+            Valores: 0 (No), 1 (Sí)
+    
+        heart_disease: Indicador de enfermedad cardíaca (tipo de dato: int64).
+            Valores: 0 (No), 1 (Sí)
+    
+        smoking_history: Historial de tabaquismo (tipo de dato: object).
+            Valores: 'never', 'current', 'former', 'ever', 'not current', 'No Info'
+    
+        bmi: Índice de masa corporal (tipo de dato: float64).
+            Rango: 10.01 a 95.69
+    
+        HbA1c_level: Nivel de hemoglobina A1c (tipo de dato: float64).
+            Rango: 3.5 a 9.0
+    
+        blood_glucose_level: Nivel de glucosa en sangre (tipo de dato: int64).
+            Rango: 80 a 300
+    
+        diabetes: Indicador de diabetes (tipo de dato: int64).
+            Valores: 0 (No), 1 (Sí)
+    
+    Para el modelo, se utilizaron las características:
+        age
+        bmi
+        HbA1c_level
+        blood_glucose_level
